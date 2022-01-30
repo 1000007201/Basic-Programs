@@ -9,7 +9,8 @@ while (flag)
         "1.Head and Tail percentage\n" +
         "2.Check Leap Year\n" +
         "3.Power of Two\n" +
-        "4.Exit");
+        "4.Harmonic Number\n"+
+        "5.Exit");
     int value = Convert.ToInt32(Console.ReadLine());
     switch (value)
     {
@@ -26,6 +27,10 @@ while (flag)
             powerOfTwo.Power();
             break;
         case 4:
+            HarmonicNumber harmonic = new HarmonicNumber();
+            harmonic.GetHarmonic();
+            break;
+        case 5:
             flag = false;
             break;
     }
