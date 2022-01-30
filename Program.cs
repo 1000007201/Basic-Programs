@@ -15,7 +15,8 @@ while (flag)
         "7.Find Greatest number among three numbers\n"+
         "8.Check Vowel or Consonant\n"+
         "9.Find Quotient and Remainder\n"+
-        "10.Exit");
+        "10.Find Prime Factors\n"+
+        "11.Exit");
     int value = Convert.ToInt32(Console.ReadLine());
     switch (value)
     {
@@ -56,6 +57,10 @@ while (flag)
             division.Divide();
             break;
         case 10:
+            PrimeFactorisation primefactorisation = new PrimeFactorisation();
+            primefactorisation.PrimeFactor();
+            break;
+        case 11:
             flag = false;
             break;
     }
