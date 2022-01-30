@@ -12,7 +12,8 @@ while (flag)
         "4.Harmonic Number\n"+
         "5.Swap Two Numbers\n"+
         "6.Check even or odd\n"+
-        "7.Exit");
+        "7.Find Greatest number among three numbers\n"+
+        "8.Exit");
     int value = Convert.ToInt32(Console.ReadLine());
     switch (value)
     {
@@ -41,6 +42,10 @@ while (flag)
             evenOdd.Check();
             break;
         case 7:
+            GreatestOfThree great = new GreatestOfThree();
+            great.Greatest();
+            break;
+        case 8:
             flag = false;
             break;
     }
