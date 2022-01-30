@@ -10,7 +10,8 @@ while (flag)
         "2.Check Leap Year\n" +
         "3.Power of Two\n" +
         "4.Harmonic Number\n"+
-        "5.Exit");
+        "5.Swap Two Numbers\n"+
+        "6.Exit");
     int value = Convert.ToInt32(Console.ReadLine());
     switch (value)
     {
@@ -31,6 +32,10 @@ while (flag)
             harmonic.GetHarmonic();
             break;
         case 5:
+            SwapTwoNumbers swap = new SwapTwoNumbers();
+            swap.Swap();
+            break;
+        case 6:
             flag = false;
             break;
     }
