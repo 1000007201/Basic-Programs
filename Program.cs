@@ -11,7 +11,8 @@ while (flag)
         "3.Power of Two\n" +
         "4.Harmonic Number\n"+
         "5.Swap Two Numbers\n"+
-        "6.Exit");
+        "6.Check even or odd\n"+
+        "7.Exit");
     int value = Convert.ToInt32(Console.ReadLine());
     switch (value)
     {
@@ -36,6 +37,10 @@ while (flag)
             swap.Swap();
             break;
         case 6:
+            EvenOdd evenOdd = new EvenOdd();
+            evenOdd.Check();
+            break;
+        case 7:
             flag = false;
             break;
     }
