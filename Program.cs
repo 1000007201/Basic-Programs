@@ -13,7 +13,8 @@ while (flag)
         "5.Swap Two Numbers\n"+
         "6.Check even or odd\n"+
         "7.Find Greatest number among three numbers\n"+
-        "8.Exit");
+        "8.Check Vowel or Consonant\n"+
+        "9.Exit");
     int value = Convert.ToInt32(Console.ReadLine());
     switch (value)
     {
@@ -46,6 +47,10 @@ while (flag)
             great.Greatest();
             break;
         case 8:
+            VowelConsonant vowelconsonant = new VowelConsonant();
+            vowelconsonant.Check();
+            break;
+        case 9:
             flag = false;
             break;
     }
