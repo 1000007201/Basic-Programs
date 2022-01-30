@@ -7,8 +7,9 @@ while (flag)
 {
     Console.WriteLine("Enter Value:\n" +
         "1.Head and Tail percentage\n" +
-        "2.Check Leap Year\n"+
-        "3.Exit");
+        "2.Check Leap Year\n" +
+        "3.Power of Two\n" +
+        "4.Exit");
     int value = Convert.ToInt32(Console.ReadLine());
     switch (value)
     {
@@ -21,6 +22,10 @@ while (flag)
             leapyear.YearCheck();
             break;
         case 3:
+            PowerOfTwo powerOfTwo = new PowerOfTwo();
+            powerOfTwo.Power();
+            break;
+        case 4:
             flag = false;
             break;
     }
