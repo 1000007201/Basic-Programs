@@ -14,7 +14,8 @@ while (flag)
         "6.Check even or odd\n"+
         "7.Find Greatest number among three numbers\n"+
         "8.Check Vowel or Consonant\n"+
-        "9.Exit");
+        "9.Find Quotient and Remainder\n"+
+        "10.Exit");
     int value = Convert.ToInt32(Console.ReadLine());
     switch (value)
     {
@@ -51,6 +52,10 @@ while (flag)
             vowelconsonant.Check();
             break;
         case 9:
+            Division division = new Division();
+            division.Divide();
+            break;
+        case 10:
             flag = false;
             break;
     }
